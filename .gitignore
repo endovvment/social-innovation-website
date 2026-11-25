@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.env*
+!.env.example
+.vercel/
+.wrangler/
+.open-next/
+.npm-cache/
+*.log
+
+# 本機截圖與預覽紀錄，不需上傳
+screenshots/
+.preview*.log
