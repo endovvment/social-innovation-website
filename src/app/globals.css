@@ -377,8 +377,11 @@ body:has(.video-dialog[open]) { overflow: hidden; }
 .site-footer .platforms { margin-top: 9px; }
 .footer-observer { display: grid; place-items: center; align-self: center; width: 61px; height: 60px; }
 .footer-observer .observer-mark { width: 50px; transform: rotate(var(--turn, 0deg)); transition: transform .17s ease; }
-.footer-base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 15px; padding-block: 14px 18px; border-top: 1px solid var(--dark-line); color: #b8c8e1; font-size: 16px; }
-.footer-base > div { display: flex; gap: 16px; }
+.footer-base { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 15px; padding-block: 14px 18px; border-top: 1px solid var(--dark-line); color: #b8c8e1; font-size: 16px; }
+.footer-meta { display: grid; gap: 5px; }
+.footer-policies { display: flex; gap: 16px; }
+.visit-count { margin: 0; font-variant-numeric: tabular-nums; }
+.visit-count strong { color: var(--ice); }
 .footer-base a:hover { color: var(--ice); }
 
 @media (max-width: 999px) {

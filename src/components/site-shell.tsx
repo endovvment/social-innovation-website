@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { contactUrl, site } from "@/config/site";
 import { FooterMark, FooterObserver, RouteDust } from "@/components/motion";
+import { VisitCounter } from "@/components/visit-counter";
 
 export function ObserverMark({ className = "" }: { className?: string }) {
   return <span className={`observer-mark ${className}`} aria-hidden="true">
@@ -51,7 +52,10 @@ export function Footer() {
       </div>
       <div className="footer-base">
         <span>© {site.name} · 作品及品牌識別保留相關權利</span>
-        <div><Link href="/privacy">隱私權政策</Link><Link href="/terms">使用條款</Link></div>
+        <div className="footer-meta">
+          <VisitCounter />
+          <div className="footer-policies"><Link href="/privacy">隱私權政策</Link><Link href="/terms">使用條款</Link></div>
+        </div>
       </div>
     </div>
   </footer>;
